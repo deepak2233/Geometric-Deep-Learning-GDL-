@@ -1,11 +1,12 @@
-
 # Geometric Deep Learning(GDL)
 - History Of Geometric Deep Learning
 - Brief Introdouction of Geometric Deep Learning
 - Application of Geometric Deep Learning 
-- Machine/Deep Learning vs Geometrict Deep Learning/Graph Representation Learning:
+- Machine/Deep Learning vs Geometric Deep Leaning Representation Learning:
 - Introduction; Structure of Graph
-
+- Different Types of Tasks
+- How to handle Graph Data with Neural Network
+- Idea/Metheod to perform GNN
 ---
 ## **History of Geometric Deep Learning**
 GDL History has been playing a very impact on the AI field. The vast majority of deep learning is performed on **Euclidean Data**. This includes datatypes in the 1-dimensional and 2-dimensional domain. But we don’t exist in a 1D or 2D world. All that we can observe exists in 3D, and our data should reflect that. Talking about existing Deep Learning-  Deep learning has applications in computer vision, natural language processing and audio analysis, requiring Euclidean or 2D data. To facilitate working with 3D data, researchers are exploring Geometric deep learning, an umbrella term for emerging techniques used to generalise (structured) deep neural models to **Non-Euclidean** domains such as graphs and manifolds.
@@ -47,12 +48,12 @@ analyzing entities with relations/interactions. It is the fundamental term to ex
 
 Usually, human pedestrians are either represented as huge bounding boxes in three dimensions or as more degrees of motion skeletons. With faster and better three-dimensional semantic segmentation, autonomous car’s would have more and more algorithms which makes the perception feasible.
 
-## Why Convolusional fails on graph
+## **Why Convolusional fails on graph**
 ![](https://i.imgur.com/tYZpssp.png)
 
 ---
 
-## Application of Geometric Deep Learning
+## **Application of Geometric Deep Learning**
 The basic fundametal term of GDL is `Graph`. Many types of data and application is based on Graph.For a concrete example of how Graph Learning can improve existing machine learning tasks we can look at the computational sciences.
 
 One of the bottlenecks in computational chemistry, biology, and physics is the representation concepts, entities, and interactions. The nature of science is empirical and is therefore the result of many external factors and relationships. Here are some examples of where this is most obvious:
@@ -69,7 +70,7 @@ One of the bottlenecks in computational chemistry, biology, and physics is the r
 ![](https://i.imgur.com/SiI1CNy.png)
 
 ---
-## Types of Network and Graph
+## **Types of Network and Graph**
 
 #### Networks (also known as Natural Graphs):
 * **Social networks:** Society is a collection of 7+ billion individuals
@@ -88,23 +89,23 @@ One of the bottlenecks in computational chemistry, biology, and physics is the r
 
 ---
 
-## Machine/Deep Learning vs Geometrict Deep Learning/Graph Representation Learning:
+## **Machine/Deep Learning vs Geometrict Deep Learning/Graph Representation Learning:**
 
 Complex domains have a rich relational structure, which can be represented as a relational graph. By explicitly modeling relationships we achieve better performance!
 
 In Modern ML/DL tools is not as much complex like Graph. Modern deep learning toolbox is designed for simple sequences & grids
 
-## Modern ML Toolbox
+## **Modern ML Toolbox**
 
 ![](https://i.imgur.com/5Jw8dpe.png)
 
-## Deep Learning in Graph
+## **Deep Learning in Graph**
 How can we develop neural networks that are much more broadly applicable?
 Graphs are the new frontier of deep learning
 
 ![](https://i.imgur.com/4snLxmJ.png)
 
-## Why Is It Hard?
+## **Why Is It Hard?**
 **Networks are complex:** 
 * Arbitrary size and complex topological structure (i.e., no spatial locality like grids)
 
@@ -113,7 +114,7 @@ Graphs are the new frontier of deep learning
 * No fixed node ordering or reference point
 * Often dynamic and have multimodal features
 
-## Representation Learning in GDL
+## **Representation Learning in GDL**
 
 ![](https://i.imgur.com/Fp0Yv7F.png)
 
@@ -121,7 +122,8 @@ Graphs are the new frontier of deep learning
 
 ![](https://i.imgur.com/YO7kvav.png)
 
-## Introduction; Structure of Graph
+---
+## **Introduction; Structure of Graph**
 The two prerequisites needed to understand Graph Learning is in the name itself; Graph Theory and Deep Learning. This is all you need to know to understand the nature of, and build a high-level intuition for these two ideas.
 
 ## Graph Theory — Crash course
@@ -305,7 +307,7 @@ We are generally perform four types of tasks by using Graph Machine Learning Alg
 ![](https://i.imgur.com/B3dymJD.png)
 
 
-## How to handle Graph Data with Neural Network
+## **How to handle Graph Data with Neural Network**
 If you are familiar with **neural networks**, you know that they require a fixed-size input vector, as they have a fixed number of neurons in the first layer. Before continuing quickly thing about this:
 
 How would YOU represent graph data with nodes and edges as an input for a neural network?
@@ -344,7 +346,7 @@ Finally, we have to fight with the fact that our domain is non-euclidean. For im
 This (non-euclidean setup) is the reason why the whole machine learning area about graph data is also termed geometric deep learning. And that in turn explains why the Python library we will use in the third part of this series is called PyTorch Geometric.
 
 ---
-## Idea to perform GNN
+## Idea/Metheod to perform GNN
 Graph Neural Networks are able to handle all of the aforementioned problems for us. In a nutshell, they simply extend the notion of convolutions to graph data and perform a special form of **representation learning.** This idea is also called message passing, and will be explained in detail in the second part of this GNN series.
 
 While a CNN has convolutional layers with learnable filters, that perform automatic feature extraction, GNNs have message passing layers, that learn the information about the graph structure and its features. Besides that, GNNs work just like any other feed forward neural network.
